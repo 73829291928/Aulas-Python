@@ -1,0 +1,15 @@
+import os
+os.system ("cls")
+
+print ("Conversão de Temperatura")
+
+#Entrada
+nome= input("Informe seu nome: ")
+c= float (input("Informe a temperatura em gaus Celsius: "))
+               
+#Processamento
+Fahrenheit= (9 * c + 160) / 5
+
+#Saída
+print("----------------------")
+print (f"Olá, {nome}! De acordo com a temperatura que você me informou, a conversão para Fahrenheit seria de: {Fahrenheit} ")

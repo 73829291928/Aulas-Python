@@ -1,0 +1,26 @@
+import os
+os.system("cls")
+
+print("Comissão do vendedor")
+print("--------------------")
+nome = input("Insira o nome do vendedor(a): ")
+vendas = float(input("Insira o valor das vendas: R$ "))
+
+if vendas > 20000:
+    percentual = 10
+elif vendas > 10000:
+    percentual = 7
+else:
+    percentual = 5
+
+comissao = vendas * (percentual / 100)
+
+print("----------------------")
+print(f"Vendedor(a): {nome}")
+print(f"Valor vendido: R$ {vendas:.2f}")
+print(f"Percentual de comissão: {percentual}%")
+print(f"Valor da comissão: R$ {comissao:.2f}")
+
+
+print("----------------------")
+input("Aperte a tecla enter para finalizar")

@@ -1,0 +1,18 @@
+import os
+os.system("cls")
+
+print("Desconto em um compra")
+print("---------------------")
+valor = float(input("Insira o valor da compra: R$ "))
+
+if valor >= 500:
+    desconto = valor * 0.10
+    valor_final = valor - desconto
+    print(f"Você ganhou 10% de desconto: R$ {desconto:.2f}")
+    print(f"Valor final a pagar: R$ {valor_final:.2f}")
+else:
+    print("Sem desconto.")
+    print(f"Valor final a pagar: R$ {valor:.2f}")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

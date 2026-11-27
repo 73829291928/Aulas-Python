@@ -1,0 +1,16 @@
+import os
+os.system ("cls")
+
+print("Coversão de Dólar para Reais")
+
+#Entrada
+nome= input("Informe seu nome: ")
+reais= float(input("Informe o valor em reais: "))
+cotacao= float(input("Informe a cotação do dólar: "))
+
+#Processamento
+Total_em_reais= reais / cotacao
+
+#Saída
+print("-------------------------")
+print (f"Olá, {nome}! Considerando a cotação em dólar que você me informou no valor de $ {cotacao}, você vai receber R$ {Total_em_reais}")

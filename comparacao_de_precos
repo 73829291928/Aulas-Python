@@ -1,0 +1,21 @@
+import os
+os.system("cls")
+
+print("Comparaçao de preços")
+print("--------------------")
+nome1 = input("Informe o nome do fornecedor 1: ")
+valor1 = float(input(f"Informe o valor da proposta de {nome1}: R$ "))
+print("--------------------")
+nome2 = input("Informe o nome do fornecedor 2: ")
+valor2 = float(input(f"Informe o valor da proposta de {nome2}: R$ "))
+
+print("--------------------")
+if valor1 < valor2:
+    print(f"Menor preço: {nome1} com R$ {valor1:.2f}")
+elif valor2 < valor1:
+    print(f"Menor preço: {nome2} com R$ {valor2:.2f}")
+else:
+    print("As propostas possuem o mesmo valor.")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

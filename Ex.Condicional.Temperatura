@@ -1,0 +1,17 @@
+import os
+os.system ("cls")
+
+print("Temperatura")
+
+#Entrada
+nome= input("Insira seu nome: ")
+temperatura= int (input("Insira a temperatura: "))
+
+#Processamento
+
+if temperatura >=30: 
+    print ("Está quente")
+if temperatura >=20: 
+    print ("Está agradável")
+else: 
+    print ("Está frio")

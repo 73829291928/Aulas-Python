@@ -1,0 +1,35 @@
+import os
+os.system("cls")
+
+print("Desafio - Sistema de compras")
+print("----------------------------")
+cliente = input("Nome do(a) cliente: ")
+produto = input("Nome do produto: ")
+preco = float(input("Preço unitário: R$ "))
+quantidade = int(input("Quantidade: "))
+
+
+subtotal = preco * quantidade
+
+if subtotal > 1000:
+    percentual = 15
+elif subtotal > 500:
+    percentual = 10
+elif subtotal > 200:
+    percentual = 5
+else:
+    percentual = 0
+
+valor_desconto = subtotal * (percentual / 100)
+total = subtotal - valor_desconto
+
+print("--------------------")
+print(f"Cliente: {cliente}")
+print(f"Produto: {produto}")
+print(f"Preço unitário: R$ {preco:.2f} x {quantidade}")
+print(f"Subtotal: R$ {subtotal:.2f}")
+print(f"Desconto: {percentual}% - R$ {valor_desconto:.2f}")
+print(f"TOTAL A PAGAR: R$ {total:.2f}")
+
+print("--------------------------------")
+input("Aperte a tecla enter para finalizar")

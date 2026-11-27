@@ -1,0 +1,19 @@
+import os
+os.system("cls")
+
+print("Frete de uma compra")
+print("-------------------")
+valor = float(input("Insira o valor da compra: R$ "))
+
+if valor >= 300:
+    frete = 0
+    print("Frete grátis!")
+else:
+    frete = 25
+    print(f"Frete: R$ {frete:.2f}")
+
+valor_final = valor + frete
+print(f"Valor final do pedido: R$ {valor_final:.2f}")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

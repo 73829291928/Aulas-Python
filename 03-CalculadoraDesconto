@@ -1,0 +1,18 @@
+import os
+os.system("cls")
+
+print ("Calculadora de Desconto")
+
+#Passo1 - Entrada de Dados 
+nome1= input ("Informe seu nome: ")
+nome = input ("Informe o nome do produto: ")
+valor_produto = int(input("Informe o valor do produto: "))
+valor_desconto = int(input("Informe o valor do desconto: "))
+
+#Passo2 - processamento
+desconto = (valor_produto * valor_desconto) / 100
+total = (valor_produto - desconto)
+
+#Passo3 - saída
+print("--------------") 
+print (f"Olá, {nome1}! O valor do seu desconto foi de R$ {desconto}. Sendo assim, o seu {nome} saiu por R$ {total}")

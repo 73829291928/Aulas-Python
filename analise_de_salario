@@ -1,0 +1,27 @@
+import os
+os.system("cls")
+
+print("Analise de salário")
+print("------------------")
+nome = input("Informe o nome do funcionário(a): ")
+salario = float(input("Informe o salário atual: R$ "))
+
+if salario <= 2000:
+    percentual = 10
+elif salario <= 5000:
+    percentual = 7
+else:
+    percentual = 5
+
+valor_aumento = salario * (percentual / 100)
+novo_salario = salario + valor_aumento
+
+print("------------------")
+print(f"Funcionário(a): {nome}")
+print(f"Salário atual: R$ {salario:.2f}")
+print(f"Percentual: {percentual}%")
+print(f"Valor do aumento: R$ {valor_aumento:.2f}")
+print(f"Novo salário: R$ {novo_salario:.2f}")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

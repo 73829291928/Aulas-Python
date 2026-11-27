@@ -1,0 +1,25 @@
+import os
+os.system ("cls")
+
+#Entrada 
+nome= input("Insira seu nome: ")
+ano_nascimento= int(input("Insira o ano do seu nascimento: "))
+ano_atual= int(input("Insira o ano em que estamos: "))
+carteira= (input("Possuí carteira de motorista? 1 - Sim / 0 - Não: "))
+
+#Processamento 
+Idade= ano_atual - ano_nascimento
+
+#Saída
+print("-----------------")
+print(f"Olá, {nome}! Você tem {Idade} anos, portanto você é ")
+
+if Idade <=17:
+    print ("Menor de idade") 
+    
+else:
+    print ("Maior de idade")
+    if carteira== "1":
+        print ("Pode dirigir")
+    else: 
+         print ("Não pode dirigir")

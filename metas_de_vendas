@@ -1,0 +1,17 @@
+import os
+os.system("cls")
+
+print("Metas de vendas")
+print ("--------------")
+nome = input("Insira o nome do vendedor: ")
+vendas = float(input("Insira o valor total vendido no mês: R$ "))
+
+if vendas >= 15000:
+    print(f"{nome}, seu desempenho foi Excelente!")
+elif vendas >= 10000:
+    print(f"{nome}, sua meta atingida!")
+else:
+    print(f"{nome}, sua meta não foi atingida.")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

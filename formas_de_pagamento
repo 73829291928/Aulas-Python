@@ -1,0 +1,38 @@
+import os
+os.system("cls")
+
+print("Formas de pagamento")
+print("-------------------")
+valor = float(input("Insira o valor da compra: R$ "))
+print("1 - PIX (10% desconto)")
+print("2 - Dinheiro (5% desconto)")
+print("3 - Cartão (sem desconto)")
+forma = int(input("Escolha a forma (1, 2 ou 3): "))
+
+if forma == 1:
+    desconto = valor * 0.10
+    percentual = 10
+    nome_forma = "PIX"
+elif forma == 2:
+    desconto = valor * 0.05
+    percentual = 5
+    nome_forma = "Dinheiro"
+elif forma == 3:
+    desconto = 0
+    percentual = 0
+    nome_forma = "Cartão"
+else:
+    print("Opção inválida!")
+    desconto = 0
+    percentual = 0
+    nome_forma = "Inválida"
+
+valor_final = valor - desconto
+
+print("--------------------")
+print(f"Forma: {nome_forma}")
+print(f"Desconto: {percentual}% - R$ {desconto:.2f}")
+print(f"Valor final: R$ {valor_final:.2f}")
+
+print("------------------------------")
+input("Aperte a tecla enter para finalizar")

@@ -1,0 +1,23 @@
+import os 
+os.system ("cls")
+
+print("Calculo de Idade")
+
+#Entrada
+nome= input("Insira seu nome: ")
+ano_nascimento= int(input("Insira o ano do seu nascimento: "))
+ano_atual= int(input("Insira o ano em que estamos: "))
+
+# Processameento
+idade= ano_atual - ano_nascimento
+
+
+
+#Saída 
+print("------------------------")
+print (f"Olá, {nome}! Você tem {idade} anos")
+
+if idade <=17: 
+    print ("Menor de idade")
+else : 
+    print ("Maior de idade")

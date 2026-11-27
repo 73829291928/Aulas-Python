@@ -1,0 +1,23 @@
+import os
+os.system("cls")
+
+print("Controle de estoque")
+print("-------------------")
+produto = input("Insira o nome do produto: ")
+qtd = int(input("Insira a quantidade em estoque: "))
+
+
+if qtd < 10:
+    situacao = "Estoque crítico"
+elif qtd <= 30:
+    situacao = "Estoque baixo"
+else:
+    situacao = "Estoque adequado"
+
+print("---------------------")
+print(f"Produto: {produto}")
+print(f"Quantidade: {qtd}")
+print(f"Situação: {situacao}")
+
+print("--------------------------------")
+input("Aperte a tecla enter para finalizar")

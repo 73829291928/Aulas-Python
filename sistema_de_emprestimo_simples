@@ -1,0 +1,20 @@
+import os
+os.system("cls")
+
+print("Sistema de empréstimo simples")
+print("-----------------------------")
+
+salario = float(input("Informe seu salário: R$ "))
+parcela = float(input("Informe o valor da parcela desejada: R$ "))
+
+limite = salario * 0.30
+
+print(f"Limite da parcela (30% do salário): R$ {limite:.2f}")
+
+if parcela <= limite:
+    print("Empréstimo APROVADO")
+else:
+    print("Empréstimo NÃO APROVADO - parcela acima do limite permitido")
+
+print("-----------------------------------")
+input("Aperte a tecla enter para finalizar")

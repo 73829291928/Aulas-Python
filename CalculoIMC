@@ -1,0 +1,30 @@
+import os
+os.system ("cls")
+
+print ("Cálculo IMC")
+
+#Dados de entrada
+Nome= input("Insira seu nome: ")
+Peso= float(input("Insira seu peso: "))
+ALtura= float(input("Insira sua altura: "))
+
+# Processamento
+Imc = Peso / (ALtura * ALtura)
+
+# Saída
+
+print ("-----------------")
+print (f"Seu IMC é de {Imc} kg/m². Sendo assim, De acordo com a Organização Mundial da Saúde (OMS), você está")
+
+if Imc <=18.5:
+    print("desnutrido")
+elif Imc <=24.9:
+  print("dentro do Peso")
+elif Imc <=29.9:
+   print("com sobrepeso😎")
+elif Imc<=34.9:
+   print(" com obesidade grau I")  
+elif Imc <=39.9:
+   print("com obesidade grau II")
+else:
+   print("com obesidade grau III")
